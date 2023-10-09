@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        let b = "b"; // ES6
+        const c = "c"; // ES6 (variabel yang tidak dapat diubah)
+
+        document.write(a);
+        document.write("<br>");
+        document.write(b);
+        document.write("<br>");
+        document.write(c);
+        document.write("<br>");
+
+        // Ini adalah komentar satu baris
+
+        /*
+        Ini adalah komentar
+        yang lebih dari satu baris
+        */
+
+        if (a == 1) {
+            document.write("a = 1");// Jika kondisi benar
+            document.write("<br>");
+        } else {
+            document.write("a != 1");// Jika kondisi salah
+            document.write("<br>");
+        }
+
+        for (var i = 1; i < 4; i++) {
+            document.write("perulangan ke " + 1);// Lakukan sesuatu selama kondisi terpenuhi
+            document.write("<br>");
+        }
+
+        function namaFungsi(d, e) {
+        var d = 1;
+        var e = d+ d;
+        document.write(e);
+        document.write("<br>");
+        // Melakukan sesuatu dengan parameter
+        return hasil;
+        }
+
+
+        // Buat variabel untuk menyimpan pengeluaran
+        var pengeluaran = [100, 200, 50, 300, 150];
+
+        // Buat variabel untuk menyimpan total pengeluaran
+        var totalPengeluaran = 0;
+
+        // Gunakan perulangan untuk menghitung total pengeluaran
+        for (var i = 0; i < pengeluaran.length; i++) {
+            totalPengeluaran += pengeluaran[i];
+        }
+
+        // Tampilkan hasil total pengeluaran
+        document.write("Total Pengeluaran Anda adalah: " + totalPengeluaran);
+
+    </script>
+</body>
+</html>
